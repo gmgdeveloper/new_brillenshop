@@ -1,0 +1,6 @@
+[submodule "new_brillenshop"]
+	path = new_brillenshop
+	url = https://github.com/gmgdeveloper/new_brillenshop.git
+[submodule "brillenShop-new"]
+	path = brillenShop-new
+	url = https://github.com/gmgdeveloper/new_brillenshop.git
