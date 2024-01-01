@@ -1,0 +1,339 @@
+/*
+	Template Name: Export/Import - MySQL Data
+	Template URL:  http://themeposh.com/
+	Author : Themeposh
+	Version : 2.2
+*/
+
+.txt-center{
+	text-align:center;
+}
+.txt-right{
+	text-align:right;
+}
+.selectFile span.red,
+.red{
+	color:red;
+}
+.done {
+	color:#28a745;
+}
+.table {
+    margin-bottom: 0px;
+}
+.margin-b20{
+	margin-bottom: 20px;
+}
+.display-none {
+	display: none;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+.tp-bg-1 {background-color: #dcebfe;}
+.tp-bg-1 span {color: #157efb;}
+
+.tp-bg-2 {background-color: #f9f9f9;}
+.tp-bg-2 span {color: #157efb;}
+
+.tp-b-solid {border: 1px solid #ddd;}
+.tp-b-dashed {border: 2px dashed #157efb;}
+.tp-b-radius-10 {border-radius: 10px;}
+.tp-b-radius-5 {border-radius: 5px;}
+
+/* ======================
+   module
+   ====================== */
+a.module-box {
+	display: block;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #00618a;
+	background:#f9f9f9;
+	border: 1px solid #ddd;
+	font-weight:bold;
+	font-size: 18px;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+} 
+a.module-box:hover {
+	background:#00618a;
+	color:#ffffff;	
+}
+
+/* ======================
+   panel
+   ====================== */
+.panel-area {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	margin-bottom:20px;
+	background: #ffffff;
+}
+.panel-header {
+	border-bottom: 1px solid #ddd;
+	background-color: rgba(0, 0, 0, 0.03);
+}
+.panel-content {
+	padding:10px;
+}
+.inner-panel {
+	padding:10px;
+	display: inline-block;
+	width: 100%;
+}
+.header-title{
+	padding:12px 10px;
+	font-size: 24px;
+}
+.rules-title {
+	float:left;
+	font-size:18px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+	padding-top: 10px;
+}
+.tab-content {
+	border-right:1px solid #ddd;
+	border-left:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	padding:15px;
+}
+.selectFile {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+.SuccessMgs {
+	font-size: 16px;
+	margin-top: 10px;
+}
+.SuccessMgs a{
+	color:#000000;
+	text-decoration:underline;
+}
+.SuccessMgs a:hover{
+	color:#00618a;
+	text-decoration:none;
+}
+
+/* ======================
+   button css
+   ====================== */
+input.tp-btn,
+button.tp-btn,
+a.tp-btn {
+	-moz-user-select: none;
+	border: 2px solid transparent;
+	padding: 10px 30px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin-bottom: 0;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	vertical-align: middle;
+	white-space: nowrap;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+input.tp-btn.blue-btn,
+button.tp-btn.blue-btn,
+a.tp-btn.blue-btn {
+	color: #ffffff;
+	background-color: #157efb;
+	border: 2px solid #157efb;
+}
+input.tp-btn.blue-btn:hover,
+button.tp-btn.blue-btn:hover,
+a.tp-btn.blue-btn:hover {
+	background-color: #ffffff;
+	color: #157efb;
+}   
+
+/* ======================
+   upload css(Demo 1, Demo 2, Demo 3, Demo 4)
+   ====================== */
+.tp-upload-box {
+	margin: 0 auto;
+	background: #fff;
+	-webkit-box-shadow: 0px 15px 66px 5px rgba(217,217,217,0.8);
+	-moz-box-shadow: 0px 15px 66px 5px rgba(217,217,217,0.8);
+	box-shadow: 0px 15px 66px 5px rgba(217,217,217,0.8);	
+}
+.tp-header {
+	border-bottom: 1px solid #ddd;
+	padding: 10px 20px;
+	font-size: 20px;
+}
+.tp-body {
+	padding: 20px 30px;	
+}
+.tp-footer {
+	border-top: 1px solid #ddd;
+	padding: 15px 30px;
+	overflow: hidden;
+}
+.tp-upload-box label {
+    color: #444;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+.tp-file-upload {
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.tp-file-upload input.tp-upload {
+	opacity: 0;
+	display: none;
+	visibility: hidden;
+}
+.tp-file-upload label.tp-uploader {
+	width: 100%;
+	height: 100%;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+	margin: 0;
+}
+.tp-file-upload label.tp-uploader span.icon-upload {
+	font-size: 50px;
+}
+
+/* ======================
+   upload css(Demo 5)
+   ====================== */
+.tp-file-uploader-box {
+	width: 140px;
+	height: auto;
+	margin: 0 auto;
+}
+.tp-file-uploader-box .inputFile{
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0.1px;
+    z-index: -1;
+}
+.tp-file-uploader-box label {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	padding: 5px;
+	margin:0 auto;
+}
+.tp-file-uploader-box label span {
+    width:100%;
+	height:auto;
+	background:#157efb;
+	color:#ffffff;
+	font-size:50px;
+	text-align:center;
+	border-radius: 50%;
+	line-height:130px;
+	float: left;
+	box-shadow: 0 0px 0 0 #ffffff;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.tp-file-uploader-box label span:hover {
+	box-shadow: 0 0px 0 0 #ffffff, 0 0px 10px 0 #ffffff;
+	background:#1d7bec;
+}
+.tp-file-uploader-box label span {
+	width:100%;
+	text-align:center;
+	float: left;
+}
+
+/* ======================
+   upload css(Demo 6)
+   ====================== */
+.tp-file-upload input.tp-form-control {
+	display: block;
+	width: 100%;
+	padding: 10px 10px;
+	font-size: 16px;
+	color: #495057;
+	background-color: #eee;
+	border: 1px solid #e6e6e6;
+	border-radius: 6px;
+}
+.tp-file-upload .file_browse_box {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.tp-file-upload .file_browse {
+	display: none;
+	visibility: hidden;
+}
+.tp-file-upload .file_browse_icon {
+	border: 1px solid #ddd;
+	padding: 6px 15px;
+	background: #fff;
+	margin: 5px 5px 5px 0px;
+	border-radius: 6px;
+}
+.tp-file-upload .file_browse_icon span {
+	margin-right: 10px;
+}
+
+/* ======================
+   Responsive
+   ====================== */
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.tp-file-upload label.tp-uploader {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+/* small mobile :320px. */
+@media (max-width: 767px) {
+	.tp-file-upload label.tp-uploader {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.tp-file-upload label.tp-uploader span.icon-upload {
+		font-size: 35px;
+	}	
+}
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.tp-file-upload label.tp-uploader {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}

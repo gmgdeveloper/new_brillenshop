@@ -1,0 +1,417 @@
+/*
+	Template Name: Export/Import - MySQL Data
+	Template URL:  http://themeposh.com/
+	Author : Themeposh
+	Version : 2.2
+*/
+
+/* ======================
+   default css
+   ====================== */
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.75;
+	letter-spacing: 1px;
+	color: #484848;
+}
+.img, img {
+	max-width: 100%;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+a,
+button {
+	outline: medium none;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.relative {
+	position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	color: #444;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	line-height: 26px;
+	margin-bottom: 15px;
+}
+label {
+	color: #444;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+.text-bold {
+	font-weight: 600;
+}
+.min-height {
+	min-height:700px;
+}
+
+.w-5 {width: 5%;}
+.w-15 {width: 15%;}
+.w-35 {width: 35%;}
+
+a.scroll-to-top {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	text-align: center;
+	font-size: 18px;
+	z-index: 9999;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-ms-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+}
+a.scroll-to-top:hover {
+	background: #444; 
+}
+/* ======================
+   Header
+   ====================== */
+.header {}
+.header-fixed {
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 1030;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.header-transparent {
+	background: #ffffff;
+	z-index: 1030;
+	-webkit-box-shadow: 0 -3px 11px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: 0 -3px 11px rgba(50, 50, 50, 0.4);
+	box-shadow: 0 -3px 11px rgba(50, 50, 50, 0.4);	
+}
+.sticky {
+	left: 0;
+	margin: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #ffffff;
+	z-index: 1030;
+	-webkit-box-shadow: 0 -3px 11px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: 0 -3px 11px rgba(50, 50, 50, 0.4);
+	box-shadow: 0 -3px 11px rgba(50, 50, 50, 0.4);	
+}
+.logo {
+	padding: 12px 0;
+}
+.logo a {
+	color: #444;
+	font-size: 20px;
+	font-weight: 700;
+}
+.logo a:hover {
+	color: #444;
+}
+.logo img {
+	width: 150px;
+}
+.main-menu-area {}
+.main-menu {}
+.main-menu li {
+	position: relative;
+	float: left;
+	margin-left: 30px;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.main-menu li a {
+	color: #444;
+	font-size: 13px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	padding: 23px 0;
+	display: inline-block;
+}
+.main-menu > li > a::before {
+	background: #444;
+	bottom: 17px;
+	content: "";
+	height: 2px;
+	left: 10%;
+	margin: auto;
+	opacity: 0;
+	position: absolute;
+	width: 0px;
+	-webkit-transition: all .28s ease-in-out;
+	-moz-transition: all .28s ease-in-out;
+	-ms-transition: all .28s ease-in-out;
+	-o-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+}
+.main-menu li.active > a::before,
+.main-menu li:hover > a::before {
+	opacity: 1;
+	width: 80%;
+	display: block;
+}
+.header-transparent .main-menu li.active > a::before {
+	background: #444;
+}
+.header-transparent.sticky .main-menu > li::after {
+  top: 25px;
+}
+.header.sticky .main-menu > li > a::before,
+.header-transparent.sticky .main-menu > li > a::before {
+  bottom: 17px;
+}
+.mobile-menu-area {
+	display: none;
+}
+.header-transparent.sticky .logo a {
+	padding: 11px 0;
+	color: #232323;
+}
+.header-transparent.sticky .main-menu > li > a {
+	color: #232323;
+	padding: 23px 0;
+}
+.header-transparent.sticky .mean-container a.meanmenu-reveal span {
+	background: #444;
+}
+.header-transparent.sticky .mean-container a.meanmenu-reveal {
+	top: -56px;
+	color: #444;
+}
+.header-transparent .main-menu > li > a::before {
+	background: #444;
+}
+
+/* ======================
+   Section Heading
+   ====================== */
+.section-heading {}  
+.section-heading h2 {
+	font-size: 35px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	letter-spacing: 3px;
+	text-transform: capitalize;
+}
+.section-heading h2::before {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: "";
+	background: #444;
+	height: 2px;
+	width: 65px;
+	margin: auto;
+}
+
+/* ======================
+   Background Color
+   ====================== */
+.bg-black {background: #444;}
+.bg-white {background: #fff;}
+.bg-gray {background: #fafafa;}
+.theme-bg-color,
+.top-header,
+.main-menu li ul.submenu li:hover > a,
+.main-menu li > a.active::before,
+.main-menu li ul.submenu li a.active,
+.header-transparent.sticky .main-menu li.active > a::before,
+.header-transparent.sticky .main-menu > li > a::before,
+a.scroll-to-top,
+.loader,
+.btn.white-btn:hover,
+.mean-container .mean-nav ul li.active a,
+.mean-container .mean-nav ul li a:hover {
+	background: #232323;
+	color: #ffffff;
+}
+
+.bg-section {
+	background-clip: initial;
+	background-size: cover;
+	background-color: transparent;
+	background-origin: initial;
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 400px;
+}
+/* overlay */
+[data-black-overlay] {
+	position: relative;
+}
+[data-black-overlay]::before {
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+[data-black-overlay]::before {
+  background: #000;
+}
+[data-black-overlay="8"]::before{
+	opacity: 0.8;
+}
+
+/* Video Play button */
+.play-btn {
+	position: absolute;
+	background: #fff;
+	width: 70px;
+	height: 70px;
+	line-height: 65px;
+	text-align: center;
+	font-size: 30px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+}
+.play-btn::before, .play-btn::after {
+	position: absolute;
+	content: "";
+	border: 1px solid #fff;
+	display: block;
+	top: -10px;
+	right: -10px;
+	bottom: -10px;
+	left: -10px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-animation: play-pulse 1.5s linear infinite;
+	animation: play-pulse 1.5s linear infinite;
+}
+.play-btn::after {
+	animation-delay: 0.5s;
+}
+.play-btn .fa {
+	color: #ff0000;
+}
+/* ======================
+   Responsive
+   ====================== */
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {}
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.mobile-menu-area {
+		display: block;
+		width: 100%;
+	}	
+}
+/* small mobile :320px. */
+@media (max-width: 767px) {
+	.mobile-menu-area {
+		display: block;
+		width: 100%;
+	}	
+}
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.mobile-menu-area {
+		display: block;
+		width: 100%;
+	}	
+}
